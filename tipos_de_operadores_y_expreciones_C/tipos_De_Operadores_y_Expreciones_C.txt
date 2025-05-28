@@ -1,0 +1,109 @@
+Operadores mas comunes
+
+- Aritmeticos
+ - Suma +
+ - Resta -
+ - Multiplicacion *
+ - Divicion
+ - Resto %
+
+
+- Asignacion
+ - Operador de igualdad =
+ - Operadores +=, -=, *= y /= . Es lo mismo que poner a+=1 
+ - Operadores incementales ++ y -- 
+    - i = 2;
+    - j = 2;
+    - m = i++; // despues de ejecutarse esta sentencia m=2 y i=3
+    - n = ++j; // despues de ejecutarse este sentencia n=2 y j=3
+
+
+- Relacionales
+ - Igual que: ==
+ - Menor que: <
+ - Mayor que: >
+ - Menor igual que: <=
+ - Mayor igual que: >=
+ - Distinto que: !=
+
+
+- Logicos
+    - AND: &&
+    - OR:  ||
+    - Operador de negacion logica (!): Este operador devuelve un cero (false) si se aplica a un valor distinto de cero (true), y devuelve un 1 (true) si se aplica a un valor (false). Su forma general es. !exprecion
+
+
+Resumen de precedencia de algunos operadores 
+
+
+Procedencia                                  | Asociatividad
+---------------------------------------------|------------------------
+() [] -> .                                   | izda a dcha         
+---------------------------------------------|------------------------
+++ == ! sizeof (tipo)                        |
++ (unario) - (unario) *(indir) &(direccion)  | dcha a izda 
+---------------------------------------------|------------------------
+        * / %                                | izda a dcha
+---------------------------------------------|------------------------
+        + -                                  | izda a dcha
+---------------------------------------------|------------------------
+        <  <=  >  =>                         | izda a dcha
+---------------------------------------------|------------------------
+        == !=                                | izda a dcha
+---------------------------------------------|------------------------
+        &&                                   | izda a dcha
+---------------------------------------------|------------------------
+        ||                                   | izda a dcha
+---------------------------------------------|-------------------------
+        ?:                                   | dcha a izda
+---------------------------------------------|-------------------------
+    = += -= *= /=                            | dcha a izda
+---------------------------------------------|--------------------------
+    , (operador coma)                        | izda a dcha
+---------------------------------------------|--------------------------
+
+
+Expreciones
+
+- No se detectan desbordamientos de numeros ni de arreglos (Importante!)
+- En las divisiones, si los operandos son enteros, se devuelve solo el cocioente entero, sin decimales.
+
+- Las operaciones booleanas devuelven cero o uno para indicar falso o verdadero (recordar que no existe variables de tipo logico)
+
+
+
+Asignacion
+
+- Es la operacion que permite acceder a cuerta posicion de memoria y cambiar el valor alli guardado.
+
+- El operador de asignacion esta definido por el simbolo "=". A la izquierda debe aparacer una variable y a la derecha una exprecion.
+
+- Ejemplo: a = 10 + 5. Indica que la variable de nombre "a" se le asignara el resultado de evaluar 10 + 5.
+
+- La asignacion en C es una operacion (no una sentencia) que puede participar en una exprecion.
+
+
+int a,b,s;
+
+a = 5; // asigna el numero 5 a a 
+b = 3; // asigna el numero 3 a b 
+s = a+b; // asigna la suma de a y b
+
+int c = 100; // declara la viariable c y le asigna el numero 100
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
