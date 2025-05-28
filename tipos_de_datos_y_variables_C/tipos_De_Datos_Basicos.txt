@@ -1,0 +1,137 @@
+Tipo de datos basicos
+
+- char
+    - Entero de 8 bits. Modificadores signed y unsigned. Ejemplo de constantes 'A','B','c'       (entre comillas simples)
+- int
+    - Entero de 16 o 32 bits. Modificadores: signed, unsigned, short y long (32 bits).
+        Constantes, 34L, 20000, 40000.
+
+- float
+    - Punto flotante IEEE754 de 32 bits. Constantes: 12.34, 4.3e-4F
+
+- double
+    - Punto flotante IEEE754 dee 64 bits. Modificador: long.
+        Constantes 12.23, 0.00000034, 0.12334L 
+
+- void
+    - Ausencia de tipo
+
+
+Literales o constantes
+----------------------------------------------------------------------
+Nombre        | Descripcion        | Ejemplos                        |
+--------------|--------------------|----------------------------------
+Decimal       | Entero en base 10  | 1234                            |
+--------------|--------------------|----------------------------------
+Hexadecimal   | Entero en base 16  | 0x1234                          |
+--------------|--------------------|----------------------------------
+Octal         | Entero en base 8   | 01234                           |
+--------------|--------------------|----------------------------------
+Caracter      | Byte en ASCII      | 'A'                             |
+--------------|--------------------|----------------------------------
+Pubto flotante| Numero real        | 1.2, 3.4e6, 3.141592            |
+--------------|--------------------|----------------------------------
+Cadena        | Texto litelal      | "Hola, seras un gran ingeniero" |
+----------------------------------------------------------------------
+
+Valor logico y cadenas 
+- En C no existe un tipo de dato "logico". En C se considera:
+ - El valor 0 (cero) es falso
+ - Todo lo que no sea 0 (!0), es verdadero
+- En C no existe el tipo de dato cadena, solo arreglo (vector) de tipo char.
+
+    * En el estrandar C11 ya existe un tipo _Bool, puede utilizarse para hacer mas claro
+        el codigo pero su uso no es obligatorio.
+
+
+Declaracion de variables.
+
+- C requiere que cada variable sea declarada, junto a su tipo, antes de su primer uso. Esto informa al compilador el espacio a reservar en memoria para esta variable, y tambien como interpretar su valor.
+
+
+
+-----------------------------------
+
+    [   ] -> Espacio en memoria
+      a -> Identificador
+
+            Memoria 
+
+------------------------------------
+
+
+- La sintaxis para "declarar" una nueva variable en C es directa: Simplemente se escribe
+  su tipo, seguido por su nombre (Identificador). Por Ejemplo.
+
+
+int a;       // Declara la variable a de tipo int 
+float real; // declara la variable real de tipo float (punto flotante)
+char letra;// declara la variable letra de tipo char
+int a,b,c;// declara las tres variables de tipo int 
+
+
+Consideraciones sintacticas
+
+- Existe diferencia entre minisculas y mayusculas.
+
+- Todas las palabras reservadas estan en minisculas.
+
+- Todas las sentencias terminan en ; (punto y coma).
+
+- El valor inicial de las variables esta indefinido.
+
+- La declaracion de variables es:
+    <Tipo_dato> lista_variables;
+    EJ:
+        int a,b,c;
+
+
+
+
+Reglas para los identificadores
+
+1) Un identificador se forma con una secuancia de letras (minisculas de la a a la z; mayusculas de la A a la Z; y digitos del 0 al 9)
+
+2) El caracter subrayado o guion bajo (_) se considera como una letra mas.
+
+3) Un identificar no puede contener espacions en blanco, ni otros caracteres distintos de los citados, como por ejemplo (*,;:-+.etc...)
+
+4) El primer caracter de un indentifocador debe ser siempre una letra o un (_), es decir, no puede ser un digito.
+
+5) Se hace distincion entre letras mayusculas y minisculas. Asi, Masa es considerado como un identificador distiendo de masa, y MASA.
+
+6) ANSI C permite definir identificadores de hasta 31  caracteres de longitud.
+
+
+Ejemplos de identificadores validos son los siguientes.
+
+    - tiempo, distancia1, caso_A, PI, velociad_de_la_luz
+
+Por el contrario, los siguientes nombres no son validos.
+
+    - 1_valor, tiempo-total, dolares$, %final
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
