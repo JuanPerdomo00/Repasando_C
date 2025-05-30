@@ -210,4 +210,4 @@ Para terminar la formula seria de esta forma:
 
 Tambien adjunto la imagen del profesor:
 
-![Imagen Profe]("./img/algoritmodesplazamiento.png")
+![Imagen Profe](./img/algoritmodesplazamiento.png)
