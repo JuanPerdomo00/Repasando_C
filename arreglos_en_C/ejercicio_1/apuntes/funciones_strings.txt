@@ -1,0 +1,58 @@
+strcmp
+
+Proto:
+    - int strcmp(const char *s1, const char *s2);
+
+Que hace?
+compara dos cadenas de caracteres (s1 y s2) caracter por caracter.
+
+Como funciona?
+
+- Devuelve 0 si las cadenas son iguales.
+- Devuelve un valor negativo si s1 es menor que s2 (segun el orden ASCII).
+- Devuelve un valor positivo si s1 es mayor que s2.
+
+
+Ejemplos:
+
+strcmp("hola", "hola"); // devuelve 0
+strcmp("abc", "abd"); // devuelve negativo (porque 'c' < 'd')
+strcmp("xyz", "abc"); // devuelve positivo (porque 'x' > 'a')
+
+
+strcspn
+
+Proto:
+    - size_t strcspn(const char *s, const char *reject);
+
+Que hace?
+Busca en la cadena s la primera aparicion de cualquier caracter de la cadena
+reject y devuelve la posicion (indice) en que eso ocurre.
+
+- Si ningun caracter de reject aparece en s, devuelve la longitud de s.
+
+
+Para que sirve?
+Se usa comunmente para encontrar o eliminar caracteres no deseados, como el 
+salto de linea '\n' de fgets agrega al final.
+
+Ejemplos:
+
+char linea[] = "Hola Mundo\n";
+size_t pos = strcspn(linea, "\n"); // pos = 10
+
+linea[pos] = '\0'; // elimina el salto de linea
+
+Otro ejemplo:
+
+strcspn("abcdef", "xz"); // devuelve 6 (no hay 'x' ni 'z', asi que devuelve longitud de "abcdef")
+
+strcspn("abc#def", "#"); // devuelve 3 (el '#' esta en la posicion 3)
+
+
+En resumen:
+strcmp  --> compara dos cadenas --> 0 si son iguales, negativo o positivo.
+strcspm --> busca el primer caracter no permitodo --> devuelve el indice o la longitud.
+
+
+
